@@ -18,8 +18,10 @@ l'infrastructure qui le supervise.
 - **[build123d-ocp-vscode-browser-extension](https://github.com/DeepReef11/build123d-ocp-vscode-browser-extension)** —
   Extension navigateur ajoutant des raccourcis clavier au visualiseur CAO OCP
   (build123d).
-- **[todoat](https://github.com/DeepReef11/todoat)** — CLI Go de gestion de
-  tâches multi-backend.
+- **[mylistprovider](https://github.com/DeepReef11/mylistprovider)** —
+  Middleware de synchronisation bidirectionnelle de listes/tâches : une seule
+  API REST côté application, des connecteurs uniformes vers les services
+  (Nextcloud CalDAV, Todoist, …).
 - **[baby-sleep-tracker](https://github.com/DeepReef11/baby-sleep-tracker)** —
   Suivi de sommeil intégré à Home Assistant (service Python autonome).
 - **[ptouch-label-cli](https://github.com/DeepReef11/ptouch-label-cli)** — CLI

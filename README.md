@@ -36,9 +36,9 @@ l'infrastructure qui le supervise.
 - **CAO paramétrique** — bibliothèque build123d (~8 000 lignes : boîtiers,
   engrenages, filetages, plans cotés) alimentant une chaîne complète
   modélisation → tranchage → impression 3D.
-- **Réseau de capteurs domotiques** — flotte ESP32-C6 (ESPHome, Zigbee),
-  sélection et calibration de capteurs, interfaçage d'équipement CVC par
-  relais à contacts secs.
+- **Réseau de capteurs domotiques** — nœuds ESP32-C6 (ESPHome, Zigbee),
+  sélection justifiée des capteurs; interfaçage d'équipement CVC par relais
+  en conception.
 
 **Stack** : Python · TypeScript/React · C#/.NET · Go · ESPHome/ESP-IDF ·
 Home Assistant · Ansible · Docker · build123d

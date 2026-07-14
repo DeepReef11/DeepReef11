@@ -37,8 +37,7 @@ l'infrastructure qui le supervise.
   engrenages, filetages, plans cotés) alimentant une chaîne complète
   modélisation → tranchage → impression 3D.
 - **Réseau de capteurs domotiques** — nœuds ESP32-C6 (ESPHome, Zigbee),
-  sélection justifiée des capteurs; interfaçage d'équipement CVC par relais
-  en conception.
+  sélection justifiée des capteurs.
 
 **Stack** : Python · TypeScript/React · C#/.NET · Go · ESPHome/ESP-IDF ·
 Home Assistant · Ansible · Docker · build123d

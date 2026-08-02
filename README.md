@@ -15,13 +15,16 @@ prompts can be composed programmatically instead of typed one at a time. I scrip
 orchestrate these models — I don't train or fine-tune them. Most of this lives in private
 repos.
 
-**An in-app AI help assistant, built for production** — shipped into a weekly timesheet
-platform (Next.js, Prisma, role-based approvals, bilingual FR/EN). It is **data-blind by
-design**: the model receives a static application guide, a catalog of highlightable UI
-targets, the chat text, and the user's role — nothing else from the session, and a test
-keeps the endpoint free of any database access. On top of that, global and per-user caps on
-queries, tokens and cost, priced per model, where only successful calls count against a
-quota. Factored out as a reusable package with **76 passing tests**. Private repos for now.
+**[help-assistant](https://github.com/DeepReef11/help-assistant)** — an in-app AI help
+chatbot built for production, and the clearest example of how I approach LLM features. It is
+**data-blind by design**: the model receives a static application guide, a catalog of
+highlightable UI targets, the chat text, and the user's role — nothing else from the
+session, and a test keeps the endpoint free of any database access. Plus global and
+per-user caps on queries, tokens and cost, priced per model — a failed or blocked call
+costs the user nothing and never eats their quota. Two engines behind one seam (Anthropic
+SDK or the `claude` CLI),
+streaming, bilingual. **76 tests.** It runs in a weekly timesheet platform I built —
+Next.js, Prisma, role-based approvals, FR/EN — which stays private.
 
 Also self-hosted: 7 Linux machines provisioned with Ansible (38 roles), with
 Prometheus/Grafana monitoring, VLAN segmentation and a site-to-site VPN. And I build my own

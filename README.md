@@ -15,10 +15,13 @@ prompts can be composed programmatically instead of typed one at a time. I scrip
 orchestrate these models — I don't train or fine-tune them. Most of this lives in private
 repos.
 
-**Directing AI to build real software** — I write the schema, the workflow and the
-acceptance criteria, then drive the implementation through an AI coding assistant and review
-what comes back. Most recent build: a weekly timesheet platform for a ~30-person business —
-Next.js, Prisma, PostgreSQL, role-based approval workflow, bilingual FR/EN. Private repo.
+**An in-app AI help assistant, built for production** — shipped into a weekly timesheet
+platform (Next.js, Prisma, role-based approvals, bilingual FR/EN). It is **data-blind by
+design**: the model receives a static application guide, a catalog of highlightable UI
+targets, the chat text, and the user's role — nothing else from the session, and a test
+keeps the endpoint free of any database access. On top of that, global and per-user caps on
+queries, tokens and cost, priced per model, where only successful calls count against a
+quota. Factored out as a reusable package with **76 passing tests**. Private repos for now.
 
 Also self-hosted: 7 Linux machines provisioned with Ansible (38 roles), with
 Prometheus/Grafana monitoring, VLAN segmentation and a site-to-site VPN. And I build my own
